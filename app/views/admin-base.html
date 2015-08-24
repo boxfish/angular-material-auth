@@ -1,0 +1,26 @@
+<div layout="column" flex>
+<md-toolbar class="top-nav" ng-controller="NavCtrl" layout="row" layout-align="space-between center" layout-padding>
+    <div class="md-toolbar-tools">
+      <h1 class="md-headline"><span>Page Headline</span></h1>
+      <span flex></span>
+      <md-button ng-href="#/login" access-level="anon" class="md-raised">
+        <span>Log In</span>
+      </md-button>
+      <md-button ng-href="#/register" access-level="anon">
+        <span>Register</span>
+      </md-button>
+      <md-button ng-href="#/" access-level="user" class="md-raised md-primary">
+        <span>Home</span>
+      </md-button>
+      <md-button ng-href="#/admin" access-level="admin">
+        <span>Admin</span>
+      </md-button>
+      <md-button access-level="user" ng-click="logOut()">
+        <span>Log Out</span>
+      </md-button>
+    </div>
+</md-toolbar>
+
+<div ui-view layout="column" flex></div>
+
+</div>

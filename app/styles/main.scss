@@ -1,0 +1,31 @@
+@import '../../node_modules/angular-material/angular-material.css';
+@import 'http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic.css';
+
+@import 'vars';
+@import 'typography';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: $font-size--base;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.login-container {
+  width: 400px;
+
+  md-toolbar {
+    min-height: 48px;
+    max-height: 48px;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 1px rgba(255, 255, 255, 0.1);
+  }
+
+  .md-toolbar-tools {
+    min-height: 48px;
+    max-height: 48px;
+  }
+}

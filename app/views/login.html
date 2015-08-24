@@ -1,0 +1,31 @@
+<div layout="row" flex layout-align="center center" layout-align-sm="center start">
+  <section class="login-container md-whiteframe-z1" layout-margin>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h3 class="md-headline">Sign In</h3>
+      </div>
+    </md-toolbar>
+    <md-content layout-padding>
+      <md-input-container>
+        <label for="email">Email</label>
+        <input ng-model="user.email" type="email" id="email">
+      </md-input-container>
+      <md-input-container>
+        <label for="password">Password</label>
+        <input ng-model="user.password" type="password" id="password">
+      </md-input-container>
+
+      <section layout="row" layout-align="center center">
+        <md-button class="md-raised md-primary" flex ng-click="logIn()">Sign In</md-button>
+      </section>
+
+      <section layout="row" layout-sm="column" layout-align="space-around center" layout-wrap>
+        <md-checkbox class="md-primary" ng-model="user.rememberMe" aria-label="Remember Me">
+          <span class="md-caption">Remember Me</span>
+        </md-checkbox>
+        <md-button class="md-primary" ng-click="resetPassword()"><span class="md-caption">Forgot Password?</span></md-button>
+      </section>
+  </md-content>
+
+  </section>
+</div>
